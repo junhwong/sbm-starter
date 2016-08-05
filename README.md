@@ -1,2 +1,2 @@
-# sbm-starter
+# springboot-starter
 Spring boot + mybatis 
