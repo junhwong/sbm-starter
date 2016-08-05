@@ -26,9 +26,11 @@ import org.springframework.stereotype.Component;
  * @author Eddú Meléndez
  */
 @Mapper
+//@Component
 public interface CityMapper {
 
-    @Select("select * from city where state = #{state}")
-    City findByState(@Param("state") String state);
+//    @Select("select * from city where state = #{state}")
+//    @Param("state")
+    City findByState(String state);
 
 }

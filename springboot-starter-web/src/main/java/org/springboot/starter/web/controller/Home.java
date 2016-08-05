@@ -20,4 +20,18 @@ public class Home {
     String index() {
         return "Hello Spring Boot!";
     }
+    
+    @RequestMapping("/login")
+    @ResponseBody
+    public String login() {
+        
+        String html="<form action=\"/login\" method=\"post\">\n" +
+"            <div><label> 用户名 : <input type=\"text\" name=\"username\"/> </label></div>\n" +
+"            <div><label> 密  码 : <input type=\"password\" name=\"password\"/> </label></div>\n" +
+"            <div><input type=\"submit\" value=\"登录\"/></div>\n" +
+"        </form>";
+        
+        return html;
+    }
+    
 }
