@@ -9,7 +9,9 @@ import org.springboot.starter.mybatis.domain.City;
 import org.springboot.starter.mybatis.mapper.CityMapper;
 import org.springboot.starter.mybatis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  *

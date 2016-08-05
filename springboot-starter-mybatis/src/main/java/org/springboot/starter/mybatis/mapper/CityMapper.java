@@ -20,10 +20,12 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import org.springboot.starter.mybatis.domain.City;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Eddú Meléndez
  */
+@Component
 @Mapper
 public interface CityMapper {
 

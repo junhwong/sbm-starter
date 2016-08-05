@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.springboot.springboot.starter.web.controller;
+package org.springboot.starter.web.controller;
 
 import org.springboot.starter.mybatis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/test")
 public class City {
     
-    @Autowired
+    @Autowired //(required=false)
     CityService cityService;
     
     @RequestMapping("/index")
