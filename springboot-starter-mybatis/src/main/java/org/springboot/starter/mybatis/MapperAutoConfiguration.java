@@ -15,27 +15,25 @@
  */
 package org.springboot.starter.mybatis;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import org.springboot.starter.mybatis.mapper.CityMapper;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
-public class SampleMapperApplication implements CommandLineRunner {
+//@SpringBootApplication
+@Configuration
+@ComponentScan(basePackages = {"org.springboot.starter.mybatis"})
+@EnableAutoConfiguration
+public class MapperAutoConfiguration {//implements CommandLineRunner
 
-    @Autowired
-    private CityMapper cityMapper;
-
-    public static void main(String[] args) {
-        SpringApplication.run(SampleMapperApplication.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println(this.cityMapper.findByState("CA"));
-    }
-
+//    @Autowired
+//    private CityMapper cityMapper;
+//
+//    public static void main(String[] args) {
+//        SpringApplication.run(MapperAutoConfiguration.class, args);
+//    }
+//
+//    @Override
+//    public void run(String... args) throws Exception {
+//        System.out.println(this.cityMapper.findByState("CA"));
+//    }
 }
