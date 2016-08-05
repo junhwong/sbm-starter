@@ -13,13 +13,13 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package org.sbm.mapper;
+package org.springboot.starter.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-import org.sbm.domain.City;
+import org.springboot.starter.mybatis.domain.City;
 
 /**
  * @author Eddú Meléndez
