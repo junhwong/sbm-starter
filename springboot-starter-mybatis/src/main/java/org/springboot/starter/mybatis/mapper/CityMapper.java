@@ -25,7 +25,6 @@ import org.springframework.stereotype.Component;
 /**
  * @author Eddú Meléndez
  */
-@Component
 @Mapper
 public interface CityMapper {
 

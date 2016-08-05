@@ -16,10 +16,10 @@
         <version>1.4.0.RELEASE</version>
     </parent>
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        </dependency>-->
         <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -28,7 +28,7 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.1.2-SNAPSHOT</version>
-            <exclusions>
+            <!--<exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-core</artifactId>
@@ -45,7 +45,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-autoconfigure</artifactId>
                 </exclusion>
-            </exclusions>
+            </exclusions>-->
         </dependency>
         <!--<dependency>
             <groupId>com.h2database</groupId>
